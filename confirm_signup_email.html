@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Signup - Luno Studios</title>
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --secondary: #3B82F6;
+            --bg: #FFFFFF;
+            --text: #18181B;
+            --muted: #71717A;
+            --border: #E4E4E7;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #F8FAFC;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: var(--bg);
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            padding: 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+            color: white;
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.025em;
+            color: var(--text);
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--muted);
+            margin-bottom: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background-color: var(--text);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            padding: 32px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            background-color: #FAFAFA;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            /* This will be handled by the email client's automatic inversion if we don't override, 
+               but we can provide some hints. The user specifically asked for it to be designed for light 
+               and work well when inverted. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Placeholder for Luno Logo -->
+            <div style="font-size: 40px; font-weight: 900; letter-spacing: -2px;">LUNO</div>
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; tracking: 0.4em; margin-top: -5px; opacity: 0.8;">Studio Collective</div>
+        </div>
+        <div class="content">
+            <h1>Welcome to the Future.</h1>
+            <p>You're one step away from deploying your first neural agent. Confirm your email address to activate your Luno Studios account.</p>
+            <a href="{{ .ConfirmationURL }}" class="button">Verify Identity</a>
+            <p style="margin-top: 32px; font-size: 12px; opacity: 0.6;">If you didn't sign up for Luno Studios, you can safely ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Luno Studios Collective. All rights reserved.</p>
+            <p>
+                <a href="https://lunostudios.ca/terms">Terms</a> &bull; 
+                <a href="https://lunostudios.ca/privacy">Privacy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

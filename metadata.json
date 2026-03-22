@@ -1,0 +1,7 @@
+{
+  "name": "UPDATED New Employee LIVE Luno Studios",
+  "description": "Professional AI Automation and Booking Platform",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
